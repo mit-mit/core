@@ -1,0 +1,195 @@
+version: 1
+transforms:
+  # Top-level getters in package:os_detect
+  - title: 'Replace with HostPlatform.current.isAndroid'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      getter: 'isAndroid'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          getter: 'current.isAndroid'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.current.isIOS'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      getter: 'isIOS'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          getter: 'current.isIOS'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.current.isLinux'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      getter: 'isLinux'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          getter: 'current.isLinux'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.current.isMacOS'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      getter: 'isMacOS'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          getter: 'current.isMacOS'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.current.isWindows'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      getter: 'isWindows'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          getter: 'current.isWindows'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.current.isFuchsia'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      getter: 'isFuchsia'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          getter: 'current.isFuchsia'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.current.isBrowser'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      getter: 'isBrowser'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          getter: 'current.isBrowser'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.current.operatingSystem'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      getter: 'operatingSystem'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          getter: 'current.operatingSystem'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.current.operatingSystemVersion'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      getter: 'operatingSystemVersion'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          getter: 'current.operatingSystemVersion'
+          inClass: 'Platform'
+
+  # OS name constants in package:os_detect
+  - title: 'Replace with HostPlatform.android'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      variable: 'android'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          field: 'android'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.fuchsia'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      variable: 'fuchsia'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          field: 'fuchsia'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.iOS'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      variable: 'iOS'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          field: 'iOS'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.linux'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      variable: 'linux'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          field: 'linux'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.macOS'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      variable: 'macOS'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          field: 'macOS'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.windows'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      variable: 'windows'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          field: 'windows'
+          inClass: 'Platform'
+
+  - title: 'Replace with HostPlatform.browser'
+    date: 2026-07-10
+    element:
+      uris: ['package:os_detect/os_detect.dart']
+      variable: 'browser'
+    changes:
+      - kind: 'replacedBy'
+        newElement:
+          uris: ['package:platform/platform.dart']
+          field: 'browser'
+          inClass: 'Platform'
